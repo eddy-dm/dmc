@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@lit/localize": "^0.11.3",
+    "lit": "^2.2.8"
+  }
+}

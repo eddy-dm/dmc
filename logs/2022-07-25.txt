@@ -1,0 +1,4 @@
+[25-Jul-2022 07:51:58 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/www/php-mvc/public/index.php(32): Core\Router->dispatch('gesg')
+#1 {main}
+Thrown in '/Applications/MAMP/www/php-mvc/Core/Router.php' on line 130

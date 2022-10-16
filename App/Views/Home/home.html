@@ -1,0 +1,143 @@
+{% extends "index.html" %}
+{% block title %}DMC Motors{% endblock %}
+{% block body %}
+
+<div class="container">
+	{# {% include 'Components/header.html' %} #}
+	{% include 'Components/nav.html' %}
+</div>
+
+<!-- brand slogan -->
+<div class="container">
+	<section>
+		<div class="brand-bg rounded text-center img-fluid position-relative">
+			<h1 class="display-4 text-white">Motos & minibikes de collection</h1>
+			<p class="lead my-3 text-white">Contenu à definir.</p>
+		</div>
+		{# <div class="brand-title text-center m-4">
+			<h1 class="display-4 text-white">Motos & minibikes de collection</h1>
+			<p class="lead my-3 text-white">Content to define.</p>
+		</div> #}
+	</section>
+</div>
+
+
+{# <div class="container p-4">
+</div>
+ #}
+<!-- New arrivals -->
+<div class="container">
+	{# <div class="p-5 text-center new-products"> #}
+	<div class="row d-flex p-5 new-products justify-content-evenly align-items-center">
+		<div class="col-sm-2 text-center">
+<svg width="30px" height="30px" viewBox="0 0 32 32"><title>91-Arrow Left</title><g id="_91-Arrow_Left" data-name="91-Arrow Left"><path d="M16,32A16,16,0,1,1,32,16,16,16,0,0,1,16,32ZM16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Z"/><path d="M18.29,24.71l-8-8a1,1,0,0,1,0-1.41l8-8,1.41,1.41L12.41,16l7.29,7.29Z"/></g></svg>
+		</div>
+		<div class="col-sm-8 text-center">
+			<h2 class="main-title-2">Nouvelles Arrivées</h2>
+			<a href="products">Voir tous les articles</a>
+		</div>
+		<div class="col-sm-2 text-center">
+			<svg width="30px" height="30px" viewBox="0 0 32 32"><title>92-Arrow Right</title><g id="_92-Arrow_Right" data-name="92-Arrow Right"><path d="M16,32A16,16,0,1,1,32,16,16,16,0,0,1,16,32ZM16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Z"/><path d="M13.71,24.71l-1.41-1.41L19.59,16,12.29,8.71l1.41-1.41,8,8a1,1,0,0,1,0,1.41Z"/></g></svg>
+		</div>
+	</div>
+	{% include 'Components/products-carousel.html' %}
+</div>
+<br>
+<div class="container">
+	<div class="bg-dark rounded p-5 m-0 text-center">
+		<div class="">
+			<svg fill="#b99867" width="30px" height="30px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.315 3.401c-1.61 0-2.916 1.343-2.916 3 0 1.656 1.306 3 2.916 3 2.915 0 .972 5.799-2.916 5.799v1.4c6.939.001 9.658-13.199 2.916-13.199zm8.4 0c-1.609 0-2.915 1.343-2.915 3 0 1.656 1.306 3 2.915 3 2.916 0 .973 5.799-2.915 5.799v1.4c6.938.001 9.657-13.199 2.915-13.199z"/>
+				</svg>
+		</div>
+		<p class="banner-title quote-content main-title-2 p-4">
+			Importateur de passion
+		</p>
+		<span class="text-white">#DMC Motors</span>
+	</div>
+</div>
+
+<!-- Carousel -->
+{# <div class="container">
+	{% include 'Components/carousel.html' %}
+</div> #}
+
+<!-- Suggest -->
+{# <div class="container">
+	<section class="p-5 text-center">
+		<h2 class="banner-title">Vous avez une moto qui attend une seconde vie ?</h2>
+		<button type="button" class="m-3 custom-btn">Contactez-nous</button>
+	</section>
+</div> #}
+
+<!-- Suggest -->
+{# <div class="container">
+	<section class="p-5 pb-4 text-center bg-dark rounded">
+		<h2 class="banner-title">Vous avez une question ? Besoin d'un rendez-vous ? Vous cherchez un type de moto particulier ?</h2>
+		<button type="button" class="m-3 custom-btn">Contactez-nous</button> 
+	</section>
+</div> #}
+
+<br>
+<!-- Contact form -->
+<div class="container">
+	<div class="row g-0">
+		<div class="col-md-6 ps-4 pe-4">
+			{% include 'form.html' %}
+		</div>
+		<div class="col-md-6 position-relative">
+			<div class="rounded text-center contact-bg img-fluid">
+				<p class="lead my-3 text-white">Vous avez une question ? Besoin d'un rendez-vous ? 
+				Vous cherchez un type de moto particulier ?</p>
+				<button type="button" class="m-3 custom-btn btn-light">Contactez-nous</button>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+
+<!-- Subscribe -->
+<div class="container">
+	<section class="pe-5 ps-5 pt-5 pb-3 text-center bg-dark rounded">
+		<h2 class="banner-title pb-2">Soyez le premier à savoir quand un nouvel article est arrivé dans nos garages.</h2>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				{# <label for="" class="form-label-sm">Mail</label> #}
+				<input class="m-2 subscribe-input" type="mail" name="mail" placeholder="Adresse mail">
+				<button type="button" class="m-3 custom-btn btn-primary">S'inscrire</button>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</section>
+</div>
+<br>
+<!-- About us -->
+<div class="container">
+	<div class="row g-0">
+		<div class="col-6 d-flex justify-content-center align-items-center">
+			<div class="p-5 position-static text-center about-text">
+				<h3 class="main-title">À propos</h3>
+				<div class="">
+					<svg fill="#b99867" width="30px" height="30px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.315 3.401c-1.61 0-2.916 1.343-2.916 3 0 1.656 1.306 3 2.916 3 2.915 0 .972 5.799-2.916 5.799v1.4c6.939.001 9.658-13.199 2.916-13.199zm8.4 0c-1.609 0-2.915 1.343-2.915 3 0 1.656 1.306 3 2.915 3 2.916 0 .973 5.799-2.915 5.799v1.4c6.938.001 9.657-13.199 2.915-13.199z"/>
+					</svg>
+				</div>
+				<p class="m-0 mt-2">Nous vous aidons à trouver la motobike de vos rêves, adaptée à vos envies, de la traversée de la Champagne ou des reliefs du Morvan en passant par les routes de votre ville !</p>
+			</div>
+		</div>
+		<div class="col-md-6 position-relative">
+			<div class="rounded text-center about-bg img-fluid">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<!-- Map container -->
+<div class="container location-container">
+	{% include 'location.html' %}
+</div>
+<br>
+
+
+{% include 'Components/footer.html' %}
+{% endblock %}
